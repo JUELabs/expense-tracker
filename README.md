@@ -120,35 +120,6 @@ ESLint
 
 📂 Project Structure
 
-Expense Tracker/
-├── client/
-│   ├── app/
-│   │   ├── components/dashboard/
-│   │   ├── dashboard/
-│   │   ├── expenses/
-│   │   ├── profile/
-│   │   ├── login/
-│   │   ├── register/
-│   │   ├── forgot-password/
-│   │   ├── reset-password/
-│   │   └── verify-email/
-│   ├── lib/
-│   ├── public/
-│   └── package.json
-├── server/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── middlewares/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── validations/
-│   │   ├── app.ts
-│   │   └── server.ts
-│   ├── package.json
-│   └── tsconfig.json
-└── README.md
-
 ⚙️ Getting Started
 
 1. Clone the repository
