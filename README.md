@@ -135,62 +135,12 @@ npm install
 cd ../server
 npm install
 
-🔑 Environment Variables
-
-Backend
-
-Create:
-
-server/.env
-
-Use the environment variable names required by the backend configuration:
-
-PORT=5000
-
-DB_HOST=your_database_host
-DB_PORT=5432
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-
-JWT_SECRET=your_jwt_secret
-
-EMAIL_HOST=your_email_host
-EMAIL_PORT=your_email_port
-EMAIL_USER=your_email_user
-EMAIL_PASSWORD=your_email_password
-
-Frontend
-
-Create:
-
-client/.env.local
-
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-
-Never commit .env or .env.local files to GitHub.
 
 🗄️ Database
 
 The project uses PostgreSQL as its relational database.
 
 Before running the backend, make sure PostgreSQL is running and the required database and tables have been created.
-
-▶️ Running the Application
-
-Backend
-
-cd server
-npm run dev
-
-Frontend
-
-cd client
-npm run dev
-
-Then open:
-
-http://localhost:3000
 
 🔄 Application Flow
 
@@ -216,46 +166,6 @@ Protected requests are authenticated by the backend before allowing access to us
 
 The authentication system supports email verification, password reset, password change, logout, and protected routes.
 
-📡 API Routes
-
-Authentication
-
-POST   /auth/register
-GET    /auth/verify-email
-POST   /auth/login
-POST   /auth/logout
-GET    /auth/me
-PUT    /auth/profile
-POST   /auth/change-password
-POST   /auth/forgot-password
-POST   /auth/reset-password
-
-Expenses
-
-POST   /expenses/add-expense
-GET    /expenses/get-expenses
-GET    /expenses/get-expense/:id
-PUT    /expenses/update-expense/:id
-DELETE /expenses/delete-expense/:id
-DELETE /expenses/delete-all-expenses
-
-🧪 Validation & Error Handling
-
-The application uses Zod for request validation and centralized middleware for error handling.
-
-Request
-   ↓
-Route
-   ↓
-Middleware
-   ↓
-Validation
-   ↓
-Controller
-   ↓
-Service
-   ↓
-PostgreSQL
 
 🎯 Project Goals
 
