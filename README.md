@@ -165,7 +165,28 @@ Authentication uses JWT stored in an HTTP-only cookie.
 Protected requests are authenticated by the backend before allowing access to user-specific resources.
 
 The authentication system supports email verification, password reset, password change, logout, and protected routes.
+📡 API Routes
 
+Authentication
+
+POST   /auth/register
+GET    /auth/verify-email
+POST   /auth/login
+POST   /auth/logout
+GET    /auth/me
+PUT    /auth/profile
+POST   /auth/change-password
+POST   /auth/forgot-password
+POST   /auth/reset-password
+
+Expenses
+
+POST   /expenses/add-expense
+GET    /expenses/get-expenses
+GET    /expenses/get-expense/:id
+PUT    /expenses/update-expense/:id
+DELETE /expenses/delete-expense/:id
+DELETE /expenses/delete-all-expenses
 
 🎯 Project Goals
 
