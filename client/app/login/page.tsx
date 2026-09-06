@@ -105,6 +105,8 @@ export default function LoginPage() {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             overflow: "hidden",
+            boxSizing: "border-box",
+            width: "100%",
             border: "1px solid #E2E8F0",
             borderRadius: 3,
           }}
@@ -113,6 +115,7 @@ export default function LoginPage() {
           <Box
             sx={{
               width: { xs: "100%", md: "50%" },
+              boxSizing: "border-box",
               backgroundColor: "#ECFDF5",
               display: "flex",
               flexDirection: "column",
@@ -148,6 +151,8 @@ export default function LoginPage() {
             onSubmit={handleLogin}
             sx={{
               width: { xs: "100%", md: "50%" },
+              boxSizing: "border-box",
+              minWidth: 0,
               p: { xs: 3, sm: 5 },
             }}
           >

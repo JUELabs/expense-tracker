@@ -99,25 +99,33 @@ export default function ResetPasswordPage() {
         py: { xs: 4, sm: 6 },
       }}
     >
-      <Container maxWidth="sm">
+      <Container
+        maxWidth="sm"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Paper
           elevation={0}
           sx={{
             width: "100%",
+            maxWidth: 500,
+            boxSizing: "border-box",
             p: {
               xs: 3,
               sm: 5,
-              md: 6,
             },
             border: "1px solid #E2E8F0",
-            borderRadius: {
-              xs: 2,
-              sm: 3,
-            },
+            borderRadius: 3,
           }}
         >
           <Box
             sx={{
+              minHeight: "100vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               textAlign: "center",
               mb: { xs: 3, sm: 4 },
             }}

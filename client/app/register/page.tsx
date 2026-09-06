@@ -165,6 +165,8 @@ export default function RegisterPage() {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             overflow: "hidden",
+            boxSizing: "border-box",
+            width: "100%",
             border: "1px solid #E2E8F0",
             borderRadius: 3,
           }}
@@ -173,6 +175,7 @@ export default function RegisterPage() {
           <Box
             sx={{
               width: { xs: "100%", md: "50%" },
+              boxSizing: "border-box",
               backgroundColor: "#ECFDF5",
               display: "flex",
               flexDirection: "column",
@@ -208,6 +211,8 @@ export default function RegisterPage() {
             onSubmit={handleRegister}
             sx={{
               width: { xs: "100%", md: "50%" },
+              boxSizing: "border-box",
+              minWidth: 0,
               p: { xs: 3, sm: 5 },
             }}
           >

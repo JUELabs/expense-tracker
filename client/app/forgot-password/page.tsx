@@ -84,6 +84,7 @@ export default function ForgotPasswordPage() {
           elevation={0}
           sx={{
             width: "100%",
+            boxSizing: "border-box",
             p: {
               xs: 3,
               sm: 5,
